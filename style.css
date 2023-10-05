@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;    
+    text-align: center;
+    display: flex;
+    background-color: red;
+}
+nav h1 {
+    font-size: 300%;
+    margin-top: 0;
+    z-index: 1;
+}
+nav .ut {
+    width: 80%;
+}
+nav .ut .motor {
+    width: 100%;
+    position: relative;
+    animation-name: gyorsmotor;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+nav .ut .motor img {
+    width: 10%;
+    animation: fordulas;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+nav ul {
+    display: flex;
+    width: 100%;
+}
+nav ul .menu {
+    width: 33%;
+}
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+
+
+@keyframes gyorsmotor {
+    from {right: -65%}
+    to {right: 45%}
+}
+@keyframes fordulas {
+    0% {transform: scaleX(1);}
+    49% {transform: scaleX(1);}
+    50% {transform: scaleX(-1);}
+    100% {transform: scaleX(-1);}
+}
