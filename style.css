@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -9,14 +10,20 @@ nav {
     text-align: center;
     display: flex;
     background-color: red;
+    justify-content: center;
+    align-items: center;
 }
 nav h1 {
-    font-size: 300%;
-    margin-top: 0;
+    font-size: 400%;
+    color: white;
     z-index: 1;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
 }
 nav .ut {
-    width: 80%;
+    width: 100%;
 }
 nav .ut .motor {
     width: 100%;
@@ -36,6 +43,7 @@ nav .ut .motor img {
 nav ul {
     display: flex;
     width: 100%;
+    justify-content: right;
 }
 nav ul .menu {
     width: 33%;
@@ -44,12 +52,17 @@ nav ul li {
     list-style-type: none;
     text-align: center;
 }
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 300%;
+}
 
 
 
 @keyframes gyorsmotor {
-    from {right: -65%}
-    to {right: 45%}
+    from {right: -80%}
+    to {right: 40%}
 }
 @keyframes fordulas {
     0% {transform: scaleX(1);}
