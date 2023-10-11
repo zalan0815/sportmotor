@@ -127,14 +127,15 @@ nav ul li a:hover{
 .vasarlas a h1:hover {
     color: red;
 }
-header{
+footer{
+    padding-top: 50px;
     height: 100px;
     background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-header .element{
+footer .element{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,8 +149,153 @@ header .element{
 
 
 
-
-
+.container2{
+    margin-top: 100px;
+}
+.container2 .h1 {
+    height: 100px;
+}
+.container2 h1{
+    font-size: 400%;
+    animation: infinite;
+    animation-name: piros;
+    animation-duration: 2s;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.container2 .motorok{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container2 .motorok .motor{
+    padding: 15px;
+    width: 50%; 
+    height: 400px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.container2 .motorok .motor a{
+    text-decoration: none;
+    color: inherit;
+}
+.container2 .motorok .motor:hover{
+    color: red;
+    font-size: 105%;
+}
+.container2 .motorok .motor:hover img{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.container2 .motorok .motor img {
+    width: 490px;
+    height: 290px;
+    border-radius: 5%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+}
+button{
+    all: unset;
+    cursor: pointer;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  .overlay .content {
+    font-size: 120%;
+  }
+  .overlay a{
+    text-decoration: none;
+    color: white;
+  }
+  .overlay button{
+    border-radius: 50px;
+    background-color: red;
+    padding: 20px;
+    margin: 20px;
+    font-size: 130%;
+    transition: background-color 0.5s;
+  }
+  .overlay button:hover{
+    background-color: darkred;
+  }
+  .popup {
+    margin: 200px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    text-align: center;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: red;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+.loader{
+    margin: 0 auto;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader img{
+    animation: infinite;
+    animation-name: loader;
+    animation-duration: 2s;
+}
+#loading{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+#loadingos {
+    text-align: center;
+}
+#loadingosa {
+    font-size: 130%;
+    color: black;
+    transition: all 0.5s;
+}
+#loadingosa:hover {
+    font-size: 135%;
+    color: red;
+}
 
 
 
@@ -172,4 +318,8 @@ header .element{
 @keyframes forgas {
     from {transform: rotate(3deg);}
     to {transform: rotate(-3deg);}
+}
+@keyframes loader {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
