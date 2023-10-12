@@ -135,6 +135,9 @@ footer{
     align-items: center;
     justify-content: center;
 }
+footer a{
+    font-size: 130%;
+}
 footer .element{
     display: flex;
     align-items: center;
