@@ -137,6 +137,11 @@ footer{
 }
 footer a{
     font-size: 130%;
+    color: black;
+    transition: color 0.5s;
+}
+footer a:hover{
+    color: white;
 }
 footer .element{
     display: flex;
